@@ -1,0 +1,101 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #ffcccc;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff6699;
+}
+
+/* Grid icons styles */
+.grid-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid-icons div {
+    background-color: #ffcccc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Slides styles */
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slides img {
+    max-width: 100%;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+/* Image slides styles */
+.image-slides {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-slides img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Photo gallery styles */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .grid-icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
